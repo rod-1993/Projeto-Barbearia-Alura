@@ -1,0 +1,279 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*EDIÇÕES CABEÇALHO SITE*/
+header {
+    background: #BBBBBB;
+    padding: 20px 0; /*espaçamento interno pra cima e baixo 20px e 0 dos lados*/
+}
+
+.caixa {
+    position: relative; /*Levanta a caixa para mover tbm o menu (position absolute)*/
+    width: 940px;/*Largura padrão web para boas resoluções*/
+    margin: 0  auto; /*margin 0 na altura e largura automatica, se ajustando a diversas telas*/
+}
+
+nav {
+    position: absolute; /*torna o posicionamento do bloco absoluto na pagina*/
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline; /*posicionamento alinhado*/
+    margin: 0 0 0 15px; /*espacamento no entorno (top - direita - botton - esquerda)*/
+}
+
+nav a {
+    text-transform: uppercase; /*transforma o texto em maiusculo*/
+    color: #000000;
+    font-weight: bold; /*peso da fonte*/
+    font-size: 22px; /*tamanho da fonte*/
+    text-decoration: none; /*remover decoraçao do texto (ex: sublinhado de link)*/
+}
+
+/*hover = comando que mapea comportamentos na navegação do site, quando o mouse passa por cima de um elemento*/
+nav a:hover { 
+    color: #C78C19; 
+    text-decoration: underline;
+}
+
+/*EDIÇÕES CONTEUDO PRINCIPAL SITE - PRODUTOS*/
+
+
+
+.produtos {
+    width: 940px;/*Largura padrão web para boas resoluções*/
+    margin: 0  auto; /*margin 0 na altura e largura automatica, se ajustando a diversas telas*/
+    padding: 50px 0; /*espaçamento interno pra cima e baixo 20px e 0 dos lados*/
+}
+
+.produtos li {
+    display: inline-block; /*exibe a largura padrão do conteudo porém permite alterar tamanho*/
+    text-align: center; /*Alinhamento do texto*/
+    width: 30%; /*distribuição que o bloco vai ocupar na largura da linha*/
+    vertical-align: top; /*alinhado pelo topo da linha*/;
+    margin: 0 1.5%;
+    padding: 30px 20px; 
+    box-sizing: border-box; /*faz com que o width seja definitivo e o padding seja calculada dentro desse valor*/
+    border: 2px solid #000000; /*configurações da borda*/
+    border-radius: 10%; 
+}
+
+/*hover = comando que mapea comportamentos na navegação do site, quando o mouse passa por cima de um elemento*/
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+/*active = quando eu ativo (clico) em um elemento denavegação do site*/
+.produtos li:active {
+    border-color: #088c19;
+}
+
+.produtos li:hover h2 { /*altera o titulo do h2 quando passamos o mouse por cima do elemento "produtos li" no navegador*/
+    font-size: 34px;
+}
+
+
+.produtos h2 {
+    font-size: 30px; /*tamanho da fonte*/
+    font-weight: bold; /*peso da fonte*/
+}
+
+.produto-desc {
+    font-size: 18px;/*tamanho da fonte*/
+}
+
+.produto-preco {
+    font-size: 22px; /*tamanho da fonte*/
+    font-weight: bold; /*peso da fonte*/
+    margin-top: 10px; /*marign superior*/
+}
+/*EDIÇÕES CONTEUDO PRINCIPAL SITE - CONTATOS*/
+
+form {
+    margin: 40px 0; /*margem 40px encima e embaixo*/
+}
+
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-block {
+    display: block; /*organiza em blocos um abaixo do outro*/
+    margin: 0 0 20px;
+    padding: 10px 35px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%; /*Largura de 40% da página*/
+    padding: 15px 0; /*espaçamento interno pra cima e baixo 15px e 0 dos lados*/
+    background: orange;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold; /*espessura da fonte*/
+    border: none; /*remove a borda*/
+    border-radius: 5px; /*Arredonda os cantos da borda*/
+    transition: 1s background; /* faz com que a transição do hover não seja imediata*/
+    cursor: pointer; /*exibe a mãozinha do cursor, para mostrar que o botão é clícavel*/
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2); /*aumenta o elemento (neste caso, 20%)*/
+}
+
+.enviar:active {
+    background: #088c19;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*EDIÇÕES RODAPÉ SITE*/
+footer {
+    text-align: center;
+    background: url(./imagens_produtos/bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/*CONTEUDO DA PÁGINA INICIAL*/
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*tamanho da fonte proporcional, 2em indica duas vezes o tamanho base dela*/
+    margin: 0 0 1em;
+    clear: left; /*limpa a formatação do float da class "utensilios"*/
+}
+
+
+.main-contato {
+    padding-left: 100px;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px; /*Largura*/
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left; /*Faz o elemento flutuar, porém mantem sua "sombra" ocupando o espaço. Isso faz com que os demais elementos fiquem em volta dele*/
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0; /*espaçamento proporcional pra cima e pra baixo*/
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px; /*Largura*/
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888;
+}
+
+.conteudo-beneficios {
+    width: 640px; /*Largura*/
+    margin: 0 auto; /*margem pra cima e baixo 0 e laterias automatico*/
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; /*Alinhado verticalmente na parte de cima*/
+}
+
+.itens {
+    line-height: 1.5; /*altura da linha*/
+}
+
+.itens:before {
+    content: "🟊"; /*Inserie uma "estrela" antes do conteudo de "itens"*/
+}
+
+.itens:first-child {
+    font-weight: bold;
+} /*a pseudo-classe "first-child" edita apenas o primeiro item da class*/
+
+.imagem-beneficios {
+    width: 60%;
+    box-shadow: 10px 10px 5px #000000 ; /*inserir sombra no elemento (eixo X, eixo Y, transição da sombre, cor)*/
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+} /*div criada envolta do video, para podermos tratar posicionamento*/
+
+
+
+/*Tratamento para melhorar a visão em mobile*/
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
